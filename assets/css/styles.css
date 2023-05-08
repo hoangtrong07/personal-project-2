@@ -22,7 +22,7 @@ a {
 
 /* delivery */
 .delivery {
-  padding: 6px 0;
+  padding: 4px 0;
   background: #141414;
   height: 35px;
 }
@@ -35,36 +35,42 @@ a {
 .delivery .body span {
   color: #fff;
   font-size: 1.2rem;
+  /* font-family: Messina Sans Semi Bold; */
+  font-weight: 500;
 }
 
 .delivery .enter-code {
   font-size: 1rem;
   flex-grow: 1;
-  margin: 0 5px 0 5px;
+  margin: 0 5px 0px 5px;
   border: 1px solid #fff;
   border-radius: 5px;
   background: #fff;
   color: #333;
-  max-width: 500px;
-  padding-right: 50px;
-  padding: 4px 0;
+  max-width: 430px;
+
+  padding: 6px 5px;
 }
 
 .delivery .body button {
   border-radius: 5px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: center;
-  padding: 4px 6px;
+  padding: 5px 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  background-color: #fff;
 }
 
 .delivery .icon-close {
   display: block;
-  margin-left: auto;
-  margin-top: -25px;
+  margin: -27px 10px 0 auto;
+  opacity: 0.7;
 }
 
 .event .desc {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  font-family: Heldane;
   display: block;
   color: #141414;
   background-color: #f1c5b7;
@@ -79,7 +85,7 @@ a {
 /* header fixed */
 .header {
   height: 164px;
-  background: #f5f0f0;
+  background: #ffffff;
 }
 
 .header .row-top {
@@ -87,7 +93,26 @@ a {
   display: flex;
   align-items: center;
 }
-.header .row-top img {
+.header .row-top .icons {
+  display: flex;
+}
+.notification-badge {
+  position: relative;
+}
+.notification-badge:hover {
+  opacity: 0.8;
+}
+.notification-badge .badge {
+  background-color: #fdbec6;
+  text-align: center;
+  border-radius: 50%;
+  padding: 1.5px 2px 3px 4px;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  transform: translate(-50%);
 }
 
 .header .row-top-right {
@@ -99,34 +124,96 @@ a {
   font-size: 1.2rem;
   font-weight: 400;
   padding-right: 10px;
+  font-family: Heldane;
 }
 .header .row-top-right .icon:first-child {
   padding-right: 6px;
 }
 .header .row-top-right .icon:last-child {
-  opacity: 0.8;
+  margin-left: 8px;
 }
-
+/*================================== Header main==================== */
 .header .header-main .list {
   margin-top: 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header .header-main a {
+.header .list > li {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.sub-menu .sub-menu {
+  left: 100%;
+  top: 0px;
+  display: none;
+  width: 140px;
+  height: 100%;
+}
+.sub-menu .sub-menu-businesses {
+  height: 220px;
+}
+.header .list li:hover > .sub-menu {
   display: block;
-  font-size: 1.3rem;
+}
+.sub-menu {
+  position: absolute;
+  background: #fff;
+  top: 36px;
+  width: 140px;
+  display: none;
+}
+.sub-menu li:hover {
+  background: #fae4e4;
+}
+.sub-menu a {
+  font-family: Heldane;
+  display: block;
+  font-size: 1.2rem;
+  letter-spacing: 0.8px;
+  color: #000000;
+  font-weight: 400;
+  margin-top: 8px;
+  padding: 12px 6px;
+}
+.header .header-main a.item {
+  position: relative;
+  display: block;
+  font-size: 1.15rem;
   letter-spacing: 0.8px;
   color: #000;
-  font-weight: 500;
+  font-weight: 550;
+  padding: 8px;
 }
+.header .header-main a.item:hover {
+  opacity: 1 !important;
+  text-decoration: underline 2px solid #f1c5b7;
+  text-underline-offset: 4px;
+}
+.header .header-main a.item::after {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border: 0;
+  transform: rotate(-45deg);
+  transform-origin: 50% 50%;
+  border-bottom: 0.5px solid currentColor;
+  border-left: 0.5px solid currentColor;
+  position: absolute;
+  top: 37%;
+  right: -2px;
+  content: "";
+}
+
 /* .header.fixed {
   position: sticky;
   top: 0px;
   z-index: 1;
 } */
 
-/* CONTACT US */
+/*========================CONTACT US============================ */
 .contact {
   padding-bottom: 50px;
   display: flex;
@@ -150,6 +237,7 @@ a {
   margin-bottom: 60px;
 }
 .description .heading-2 {
+  font-family: Heldane;
   margin: 17px 0;
   display: block;
   font-weight: 400;
@@ -164,9 +252,10 @@ a {
   padding: 30px 0;
   margin: 14px 0;
   display: block;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.4em;
   font-size: 1.6rem;
+  font-family: Heldane;
 }
 .description .desc span:last-child {
   font-weight: 400;
@@ -183,8 +272,10 @@ a {
   font-weight: 400;
   line-height: 1.4em;
   font-size: 1.6rem;
+  font-family: Heldane;
 }
 .description .desc2 strong {
+  font-size: 1.7rem;
   font-weight: 700;
 }
 .description .desc2 a {
@@ -198,8 +289,10 @@ a {
   margin: 24px 0 50px;
 }
 .address-location .title {
+  font-family: Arial;
+  color: #000;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 550;
 }
 .address-location .title span {
   display: inline-block;
@@ -209,10 +302,12 @@ a {
   margin-top: 20px;
   font-style: italic;
   font-weight: 350;
+  font-family: Heldane;
 }
 .address-location .time {
   margin-top: 20px;
   font-weight: 350;
+  font-family: Heldane;
 }
 .address-location .time span:first-child {
   font-weight: 550;
@@ -225,9 +320,10 @@ a {
 .address-location .time-delivery {
   margin-top: 40px;
   font-weight: 350;
+  font-family: Heldane;
 }
 .address-location .address-2 {
-  padding-left: 160px;
+  padding-left: 300px;
 }
 /* footer */
 .footer {
@@ -244,20 +340,22 @@ a {
 .footer .row-top .footer-news-social-container {
   display: flex;
   align-items: center;
-  margin-left: 600px;
+  margin-left: 500px;
 }
 
 .footer .newsletter-input {
   border: 1px solid #ffffff;
   background: #000;
-  padding: 10px 100px 10px 4px;
+  padding: 14px 160px 14px 4px;
 }
 .footer .newsletter-submit {
   border: 1px solid #ffffff;
   background: #ffffff;
-  padding: 10px;
+  padding: 16px 40px;
   color: #000000;
   font-weight: 550;
+  text-align: center;
+  font-size: 1.1rem;
 }
 .footer .newsletter-submit:hover {
   cursor: pointer;
@@ -271,16 +369,13 @@ a {
 .footer .row-top .icon:first-child {
   background: #fff;
   padding: 1px;
-  border-radius: 20%;
+  border-radius: 10%;
 }
 .footer .row-top .icon:last-child {
   background: #fff;
-  padding: 1px;
   border-radius: 30%;
 }
-.footer .social {
-  padding: 0 24px;
-}
+
 .footer .social .icon {
   margin-left: 11px;
 }
@@ -307,8 +402,8 @@ a {
 }
 
 .footer-nav .title {
-  padding-bottom: 24px;
-  font-size: 1.2rem;
+  padding-bottom: 5px;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 .footer-nav .desc strong {
@@ -317,14 +412,16 @@ a {
 }
 .footer-nav .desc {
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-family: Heldane;
 }
 .footer-nav .assitance a,
 .resources a {
   color: #fff;
   line-height: 1.78;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 300;
+  font-family: Heldane;
 }
 .footer-nav .production-hubs {
   height: 403px;

@@ -4,8 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dự án cá nhân 2</title>
+    <title>Contact Us - Paris312</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/" />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon//apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon//apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon//apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon//apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon//apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon//apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon//apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon//apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon//android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon//favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon//manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- style css -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
@@ -13,7 +84,7 @@
       <!-- =======================Delivery============= -->
       <div class="delivery">
         <div class="body">
-          <span>DO WE DELIVERY</span>
+          <span>DO WE DELIVER?</span>
           <input
             type="text"
             class="enter-code"
@@ -49,17 +120,21 @@
             <div class="row-top-right">
               <span class="flat-fee">$12.99 Flat Fee Delivery </span>
               <div class="icons">
-                <img
-                  src="./assets/img/cart-icon.svg"
-                  alt="cart-icon"
-                  class="icon"
-                />
+                <div class="notification-badge">
+                  <img
+                    src="./assets/img/cart-icon.svg"
+                    alt="cart-icon"
+                    class="icon"
+                  />
+                  <span class="badge">0</span>
+                </div>
+
                 <img
                   src="./assets/img/icon-search.webp"
                   alt="search"
                   class="icon"
-                  width="20px"
-                  height="20px"
+                  width="18px"
+                  height="18px"
                 />
               </div>
             </div>
@@ -68,38 +143,333 @@
           <!-- header main -->
           <div class="header-main">
             <ul class="list">
-              <li class="item">
-                <a href="#!">TREDING</a>
+              <li class="items">
+                <a class="item" href="#!">TRENDING</a>
+
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#!">Morther's Day</a>
+                  </li>
+                  <li>
+                    <a href="#!">Graduation 2023</a>
+                  </li>
+                  <li>
+                    <a href="#!">Prom</a>
+                  </li>
+                </ul>
               </li>
-              <li class="item">
-                <a href="#!">GIFTS</a>
+              <li class="items">
+                <a class="item" href="#!">GIFTS</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#!">Kids Birthday</a>
+                  </li>
+                  <li>
+                    <a href="#!">Adult Birthday</a>
+                  </li>
+                  <li>
+                    <a href="#!">Morther's Birthday</a>
+                  </li>
+                  <li>
+                    <a href="#!">Graduation</a>
+                  </li>
+                  <li>
+                    <a href="#!">Romance</a>
+                  </li>
+                  <li>
+                    <a href="#!">New Baby</a>
+                  </li>
+                  <li>
+                    <a href="#!">Get Well</a>
+                  </li>
+                  <li>
+                    <a href="#!">Pets</a>
+                  </li>
+                  <li>
+                    <a href="#!">Congratulations</a>
+                  </li>
+                  <li>
+                    <a href="#!">Engagement</a>
+                  </li>
+                  <li>
+                    <a href="#!">Just Because</a>
+                  </li>
+                </ul>
               </li>
-              <li class="item">
-                <a href="#!">SURPRISE SETUPS</a>
+              <li class="items">
+                <a class="item" href="#!">SURPRISE SETUPS</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#!">Adult Birthday</a>
+                  </li>
+                  <li>
+                    <a href="#!">Kids Birthday</a>
+                  </li>
+                  <li>
+                    <a href="#!">Graduation</a>
+                  </li>
+                  <li>
+                    <a href="#!">Promantic</a>
+                  </li>
+                  <li>
+                    <a href="#!">Proposal</a>
+                  </li>
+                  <li>
+                    <a href="#!">Bridal Suite</a>
+                  </li>
+                  <li>
+                    <a href="#!">Anniversary</a>
+                  </li>
+                </ul>
               </li>
-              <li class="item">
-                <a href="#!">BABY</a>
+              <!-- ========================================= -->
+              <li class="items">
+                <a class="item" href="#!">BABY</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#!">Gender Reveal</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Indoor Decor</a>
+                      </li>
+                      <li>
+                        <a href="#!">Outdoor Decor</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">Baby Shower</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Indoor Decor</a>
+                      </li>
+                      <li>
+                        <a href="#!">Outdoor Decor</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">Baptism/Communion</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Indoor Decor</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
-              <li class="item">
-                <a href="#!">KIDS/TEENS</a>
+              <!-- ----------------------------------- -->
+              <li class="items">
+                <a class="item" href="#!">KIDS/TEENS</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#!">Kids Bỉtthdays</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Indoor Decor</a>
+                      </li>
+                      <li>
+                        <a href="#!">Surprise Setup</a>
+                      </li>
+                      <li>
+                        <a href="#!">Outdoor Decor</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">Teens Birthday</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Indoor Decor</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">Graduation</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Decor</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">From</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Decor</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">Back to school</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Indoor Decor</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
-              <li class="item">
-                <a href="#!">ADULTS</a>
+              <!-- --------------------------------------- -->
+              <li class="items">
+                <a class="item" href="#!">ADULTS</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#!">Adult Birthday</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Indoor Decor</a>
+                      </li>
+                      <li>
+                        <a href="#!">Surprise Setups</a>
+                      </li>
+                      <li>
+                        <a href="#!">Outdoor Decor</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">Graduation</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Decor</a>
+                      </li>
+                      <li>
+                        <a href="#!">Surprise Setups</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">Romantic</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Surprise Setups</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">Anniversary</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!"> Surprise Setups</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
-              <li class="item">
-                <a href="#!">BRIDAL</a>
+              <!-- ================================ -->
+              <li class="items">
+                <a class="item" href="#!">BRIDAL</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#!">Bridal Shower</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Indoor Decor</a>
+                      </li>
+                      <li>
+                        <a href="#!">Outdoor Decor</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">Bachelorette Party</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Indoor Decor</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
-              <li class="item">
-                <a href="#!">WEDDING</a>
+              <!-- ================================= -->
+              <li class="items">
+                <a class="item" href="#!">WEDDING</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#!">Proposal</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Surprise Setups</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">Engagement & Reheasal</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Indoor Decor</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">Micro-Wedding</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Indoor Decor</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
-              <li class="item">
-                <a href="#!">PETS</a>
+              <li class="items">
+                <a class="item" href="#!">PETS</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#!">Pet Fêtes</a>
+                  </li>
+                </ul>
               </li>
-              <li class="item">
-                <a href="#!">BUSINESSES</a>
+              <!-- ======================================== -->
+              <li class="items">
+                <a class="item" href="#!">BUSINESSES</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#!">Branded Decor</a>
+                  </li>
+                  <li>
+                    <a href="#!">Staff/Office Party</a>
+                    <ul class="sub-menu sub-menu-businesses">
+                      <li>
+                        <a href="#!">Birthday</a>
+                      </li>
+                      <li>
+                        <a href="#!">Retirenment</a>
+                      </li>
+                      <li>
+                        <a href="#!">Bridal Shower</a>
+                      </li>
+                      <li>
+                        <a href="#!">Baby Shower</a>
+                      </li>
+                      <li>
+                        <a href="#!">Congratulations</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
-              <li class="item">
-                <a href="#!">REQUEST A QOUTE</a>
+              <li class="items">
+                <a class="item" href="#!">REQUEST A QOUTE</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#!">Social Events</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#!">Gender Reveal</a>
+                      </li>
+                      <li>
+                        <a href="#!">Baby Shower</a>
+                      </li>
+                      <li>
+                        <a href="#!">Baptism/Communion</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">Corporate Events </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -240,22 +610,22 @@
                 <div class="wrap">
                   <h4 class="title">ASSITANCE</h4>
                   <ul class="list">
-                    <li class="item">
+                    <li class="items">
                       <a href="#!">Request a Quote</a>
                     </li>
-                    <li class="item">
+                    <li class="items">
                       <a href="#!">Contact Us</a>
                     </li>
-                    <li class="item">
+                    <li class="items">
                       <a href="#!">How to Order Online</a>
                     </li>
-                    <li class="item">
+                    <li class="items">
                       <a href="#!">Delivery Information</a>
                     </li>
-                    <li class="item">
+                    <li class="items">
                       <a href="#!">Order Tracking</a>
                     </li>
-                    <li class="item">
+                    <li class="items">
                       <a href="#!">Cancelation Policy</a>
                     </li>
                   </ul>
@@ -265,34 +635,34 @@
                 <div class="wrap">
                   <h4 class="title">RESOURCES</h4>
                   <ul class="list">
-                    <li class="item">
+                    <li class="items">
                       <a href="">About Us</a>
                     </li>
-                    <li class="item">
+                    <li class="items">
                       <a href="">Company</a>
                     </li>
-                    <li class="item">
+                    <li class="items">
                       <a href="">Collaborate with us</a>
                     </li>
-                    <li class="item">
+                    <li class="items">
                       <a href="">FAQ</a>
                     </li>
-                    <li class="item">
+                    <li class="items">
                       <a href="">Maison Paris312</a>
                     </li>
-                    <li class="item">
+                    <li class="items">
                       <a href="">Sustainable Practices</a>
                     </li>
-                    <li class="item">
+                    <li class="items">
                       <a href="">Rewards</a>
                     </li>
-                    <li class="item">
+                    <li class="items">
                       <a href="">E-Gift Card</a>
                     </li>
-                    <li class="item">
+                    <li class="items">
                       <a href="">Terms & Conditions</a>
                     </li>
-                    <li class="item">
+                    <li class="items">
                       <a href="">Privacy Policy</a>
                     </li>
                   </ul>
