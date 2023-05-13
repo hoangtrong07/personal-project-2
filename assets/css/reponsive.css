@@ -1,0 +1,92 @@
+/* mobile */
+@media only screen and (max-width: 739px) {
+  .delivery {
+    padding: 14px 0;
+    background: #141414;
+    height: 75px;
+  }
+  .delivery .body {
+    position: relative;
+    display: block;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  .delivery .body span {
+    margin-left: 2px;
+    color: rgb(255, 255, 255);
+  }
+  .delivery .enter-code {
+    display: block;
+    padding-right: 100px;
+    margin-left: -1px;
+  }
+  .delivery .body button {
+    position: absolute;
+    top: 15px;
+    margin-left: 230px;
+    padding: 5px 12px;
+  }
+  .delivery .icon-close {
+    margin-top: -25px;
+    margin-left: 290px;
+  }
+  .header .header-main .list {
+    display: none;
+  }
+  .contact {
+    height: 300px;
+    display: block;
+  }
+  .contact .heading {
+    display: inline-block;
+    font-size: 3rem;
+    padding: 40px 0 0 100px;
+    white-space: nowrap;
+  }
+  .contact .image {
+    margin-top: 100px;
+    width: 100vw;
+    height: 180px;
+  }
+  .description {
+    padding: 50px 0;
+  }
+  .address-location {
+    display: block;
+  }
+  .address-location .address-2 {
+    display: block;
+    margin-top: 30px;
+    margin-left: -290px;
+  }
+  .footer .row-top {
+    display: block;
+  }
+  .footer .row-top img {
+    margin-left: -70px;
+    width: 120px;
+    height: 30px;
+  }
+  .footer .row-top .footer-news-social-container {
+    display: block;
+  }
+  .footer .newsletter-input {
+    margin-top: 20px;
+    margin-left: -580px;
+    padding: 10px 40px 10px 4px;
+  }
+  .footer .newsletter-submit {
+    padding: 12.5px 20px;
+  }
+  .footer .row-top .icon {
+  }
+  .footer .social {
+    margin-left: -590px;
+    margin-top: 20px;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 740px) and (max-width: 1023px) {
+}
