@@ -1,5 +1,5 @@
 /* mobile */
-@media only screen and (max-width: 739px) {
+@media only screen and (max-width: 768px) {
   .delivery {
     padding: 14px 0;
     background: #141414;
@@ -8,28 +8,27 @@
   .delivery .body {
     position: relative;
     display: block;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
   }
   .delivery .body span {
-    margin-left: 2px;
+    display: block;
+    padding-left: 10px;
     color: rgb(255, 255, 255);
   }
   .delivery .enter-code {
     display: block;
-    padding-right: 100px;
-    margin-left: -1px;
+    padding-right: 240px;
+    margin-left: 5px;
   }
   .delivery .body button {
     position: absolute;
-    top: 15px;
-    margin-left: 230px;
+    top: 11px;
+    right: 60px;
     padding: 5px 12px;
   }
   .delivery .icon-close {
-    margin-top: -25px;
-    margin-left: 290px;
+    position: absolute;
+    right: 10px;
+    top: 53px;
   }
   .header .header-main .list {
     display: none;
@@ -60,30 +59,46 @@
     margin-top: 30px;
     margin-left: -290px;
   }
+  .footer .logo-footer {
+    display: none;
+  }
   .footer .row-top {
-    display: block;
+    padding: none;
+    border-bottom: none;
   }
-  .footer .row-top img {
-    margin-left: -70px;
-    width: 120px;
-    height: 30px;
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-top: -100px;
   }
-  .footer .row-top .footer-news-social-container {
-    display: block;
+  .footer-nav .production-hubs {
+    display: flex;
   }
-  .footer .newsletter-input {
-    margin-top: 20px;
-    margin-left: -580px;
-    padding: 10px 40px 10px 4px;
+  .footer-nav .item-1 {
+    width: 100vw;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
   }
-  .footer .newsletter-submit {
-    padding: 12.5px 20px;
+
+  .footer-nav .delivery-hours {
+    display: flex;
   }
-  .footer .row-top .icon {
+  .footer-nav .item-2 {
+    width: 100vw;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
   }
-  .footer .social {
-    margin-left: -590px;
-    margin-top: 20px;
+  .footer-nav .assitance {
+    display: flex;
+  }
+  .footer-nav .item-3 {
+    width: 100vw;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+  .footer-nav .resources {
+    display: flex;
   }
 }
 
